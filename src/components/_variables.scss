@@ -1,2 +1,27 @@
 $color-example: #ff0000;
 $fontsize-example: 16px;
+
+$v_white: #ffffff;
+$v_white_smoke: #f5f5f5;
+$v_gray_desertStorm: #ece9e6;
+$v_gray_gainsboro: #dddddd;
+$v_gray_nobel: #999999;
+$v_black_50: rgba(0, 0, 0, 0.5);
+$v_orange_zorba: #a19283;
+$v_orange_bistre: #442606;
+$v_black: #000000;
+
+$v_fontsize_xs: 12px;
+$v_fontsize_s: 14px;
+$v_fontsize_m: 16px;
+$v_fontsize_l: 20px;
+$v_fontsize_xl: 36px;
+$v_fontsize_xxl: 40px;
+
+$v_fontfamily_mincho: "Noto Serif JP", serif;
+$v_fontfamily_gothic: "Roboto", "Noto Sans JP", sans-serif;
+
+$v_breakpoint_sm: 576px;
+$v_breakpoint_md: 768px;
+$v_breakpoint_lg: 992px;
+$v_breakpoint_xl: 1200px;
