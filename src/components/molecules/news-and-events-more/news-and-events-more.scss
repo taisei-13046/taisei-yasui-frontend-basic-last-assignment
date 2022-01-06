@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+.news-more-title {
+	color: $v_black;
+	font-size: $v_fontsize_s;
+	text-decoration: none;
+	transition: color 0.2 ease;
+
+	i {
+		margin-left: 16px;
+	}
+
+	&:hover {
+		color: $v_gray_nobel;
+		text-decoration: none;
+	}
+}
