@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.message-wrapper {
+  text-align: center;
+
+  .message-title {
+    font-size: $v_fontsize_l;
+    font-family: $v_fontfamily_mincho;
+    margin-bottom: 6px;
+
+    @media screen and (min-width: $v_breakpoint_lg) {
+      font-size: $v_fontsize_xl;
+      margin-bottom: 10px;
+    }
+  }
+
+  .message-text {
+    font-size: $v_fontsize_s;
+    font-family: $v_fontfamily_gothic;
+  }
+}
