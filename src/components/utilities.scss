@@ -1,4 +1,5 @@
-/* 使用例 */
-h2 {
-  font-size: 38px;
+@use "./variables" as *;
+
+html {
+  font-family: $v_fontfamily_gothic;
 }
