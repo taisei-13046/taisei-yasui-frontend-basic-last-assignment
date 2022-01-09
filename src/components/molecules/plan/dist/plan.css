@@ -1,11 +1,15 @@
 @charset "UTF-8";
-.plan-wrapper {
-  width: 540px;
-}
 .plan-wrapper .plan {
   list-style: none;
+  padding: 0;
   text-align: center;
   font-family: "Roboto", "Noto Sans JP", sans-serif;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .plan-wrapper .plan {
+    margin-bottom: 0;
+  }
 }
 .plan-wrapper .plan li {
   padding: 20px 0;
@@ -32,4 +36,15 @@
   content: "￥";
   font-size: 20px;
   margin-left: 4px;
+}
+@media screen and (min-width: 768px) {
+  .plan-wrapper {
+    width: 220px;
+  }
+}
+.plan-wrapper .plan-borderd {
+  border: 5px solid #442606;
+}
+.plan-wrapper .plan-borderd li:nth-child(1) {
+  background-color: #442606;
 }

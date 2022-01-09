@@ -1,12 +1,17 @@
 @use "../../variables" as *;
 
 .plan-wrapper {
-	width: 540px;
 
 	.plan {
 		list-style: none;
+		padding: 0;
 		text-align: center;
 		font-family: $v_fontfamily_gothic;
+		margin-bottom: 24px;
+
+		@media screen and (min-width: $v_breakpoint_md) {
+			margin-bottom: 0;
+		}
 
 		li {
 			padding: 20px 0;
@@ -38,6 +43,18 @@
 					margin-left: 4px;
 				}
 			}
+		}
+	}
+
+	@media screen and (min-width: $v_breakpoint_md) {
+		width: 220px;
+	}
+
+	.plan-borderd {
+		border: 5px solid $v_orange_bistre;
+
+		li:nth-child(1) {
+			background-color: $v_orange_bistre;
 		}
 	}
 }
