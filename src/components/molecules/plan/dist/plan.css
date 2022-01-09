@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.plan-wrapper {
+  width: 540px;
+}
+.plan-wrapper .plan {
+  list-style: none;
+  text-align: center;
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+}
+.plan-wrapper .plan li {
+  padding: 20px 0;
+}
+.plan-wrapper .plan li:nth-child(n+2) {
+  border: 1px solid #dddddd;
+}
+.plan-wrapper .plan li:nth-child(1) {
+  background-color: #a19283;
+  color: #ffffff;
+  font-size: 20px;
+}
+.plan-wrapper .plan li:nth-child(2) {
+  background-color: #ece9e6;
+  padding: 24px 0;
+}
+.plan-wrapper .plan li:nth-child(2) .plan-money {
+  font-size: 40px;
+  color: #442606;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.plan-wrapper .plan li:nth-child(2) .plan-money::before {
+  content: "￥";
+  font-size: 20px;
+  margin-left: 4px;
+}

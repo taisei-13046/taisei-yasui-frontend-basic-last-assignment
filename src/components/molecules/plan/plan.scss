@@ -1,0 +1,43 @@
+@use "../../variables" as *;
+
+.plan-wrapper {
+	width: 540px;
+
+	.plan {
+		list-style: none;
+		text-align: center;
+		font-family: $v_fontfamily_gothic;
+
+		li {
+			padding: 20px 0;
+		}
+
+		li:nth-child(n+2) {
+			border: 1px solid $v_gray_gainsboro;
+		}
+
+		li:nth-child(1) {
+			background-color: $v_orange_zorba;
+			color: $v_white;
+			font-size: $v_fontsize_l;
+		}
+
+		li:nth-child(2) {
+			background-color: $v_gray_desertStorm;
+			padding: 24px 0;
+
+			.plan-money {
+				font-size: $v_fontsize_xxl;
+				color: $v_orange_bistre;
+				margin-bottom: 16px;
+				font-weight: bold;
+
+				&::before {
+					content: "￥";
+					font-size: $v_fontsize_l;
+					margin-left: 4px;
+				}
+			}
+		}
+	}
+}
