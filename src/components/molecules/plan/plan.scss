@@ -19,6 +19,7 @@
 
 		li:nth-child(n+2) {
 			border: 1px solid $v_gray_gainsboro;
+			border-top: none;
 		}
 
 		li:nth-child(1) {
