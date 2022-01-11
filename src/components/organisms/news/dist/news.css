@@ -8,6 +8,7 @@
   padding: 20px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
+  border-bottom: none;
 }
 .news-wrapper .news-article-wrapper time {
   display: block;
@@ -24,6 +25,7 @@
 }
 .news-wrapper .last-news-article-wrapper {
   margin-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
 }
 .news-wrapper .news-more-wrapper {
   text-align: right;
