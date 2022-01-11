@@ -7,7 +7,7 @@ exports.News = exports["default"] = void 0;
 
 var _news = _interopRequireDefault(require("../components/organisms/news/news.html"));
 
-require("../components/organisms/news/news");
+require("../components/organisms/news/news.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
