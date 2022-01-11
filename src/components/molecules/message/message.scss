@@ -2,17 +2,20 @@
 
 .message-wrapper {
   text-align: center;
+  padding: 32px 20px;
+
+  @media screen and (min-width: $v_breakpoint_lg) {
+    padding: 52px 20px;
+  }
 
   .message-title {
     font-size: $v_fontsize_l;
     font-family: $v_fontfamily_mincho;
     margin-bottom: 6px;
-    padding: 32px 20px;
 
     @media screen and (min-width: $v_breakpoint_lg) {
       font-size: $v_fontsize_xl;
       margin-bottom: 10px;
-      padding: 52px 20px;
     }
   }
 
