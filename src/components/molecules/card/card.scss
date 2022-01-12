@@ -15,6 +15,7 @@
 
   .card-img-wrapper {
     overflow: hidden;
+    position: relative;
 
     .card-title {
       position: absolute;
@@ -27,7 +28,7 @@
     }
 
     .card-img {
-      transition: transform 0.2s ease;
+      transition: transform 0.5s ease;
 
       &:hover {
         @media screen and(min-width: $v_breakpoint_md) {
