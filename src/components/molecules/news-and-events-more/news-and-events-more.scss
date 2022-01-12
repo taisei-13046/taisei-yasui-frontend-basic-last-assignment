@@ -1,9 +1,10 @@
 @use "../../variables" as *;
 
 .news-more-title {
+	display: flex;
+	align-items: center;
 	color: $v_black;
 	font-size: $v_fontsize_s;
-	text-decoration: none;
 	transition: color 0.2 ease;
 
 	i {
