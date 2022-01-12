@@ -1,0 +1,26 @@
+.news-wrapper {
+  width: 100%;
+}
+.news-wrapper .news-events-wrapper {
+  padding: 10px 0 16px 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+}
+.news-wrapper .news-events-wrapper p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.news-wrapper .news-events-wrapper time {
+  display: block;
+  color: #999999;
+  font-size: 12px;
+}
+.news-wrapper .last-news-events-wrapper {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
+}
