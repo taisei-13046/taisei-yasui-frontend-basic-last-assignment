@@ -1,13 +1,39 @@
-.news-wrapper {
-  width: 100%;
+@media screen and (min-width: 992px) {
+  .news-events-wrapper {
+    width: 460px;
+  }
 }
-.news-wrapper .news-events-wrapper {
-  padding: 10px 0 16px 20px;
-  background-color: #ffffff;
+.news-events-wrapper .news-title-wrapper {
+  margin-bottom: 42px;
+}
+.news-events-wrapper .img-and-news-wrapper {
+  display: flex;
   border: 1px solid #dddddd;
   border-bottom: none;
 }
-.news-wrapper .news-events-wrapper p {
+.news-events-wrapper .img-and-news-wrapper:hover img {
+  transform: scale(1.2);
+}
+.news-events-wrapper .img-and-news-wrapper img {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .news-events-wrapper .img-and-news-wrapper img {
+    display: block;
+  }
+}
+.news-events-wrapper .img-and-news-wrapper .news-events-wrapper {
+  padding: 10px 0 16px 20px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .news-events-wrapper .img-and-news-wrapper .news-events-wrapper {
+    padding: 37.5px 0px 0px 24px;
+    width: 460px;
+  }
+}
+.news-events-wrapper .img-and-news-wrapper .news-events-wrapper p {
+  width: 400px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -15,12 +41,36 @@
   margin: 0;
   margin-bottom: 8px;
 }
-.news-wrapper .news-events-wrapper time {
+@media screen and (min-width: 992px) {
+  .news-events-wrapper .img-and-news-wrapper .news-events-wrapper p {
+    width: 210px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+.news-events-wrapper .img-and-news-wrapper .news-events-wrapper time {
   display: block;
   color: #999999;
   font-size: 12px;
 }
-.news-wrapper .last-news-events-wrapper {
-  margin-bottom: 30px;
+@media screen and (min-width: 992px) {
+  .news-events-wrapper .img-and-news-wrapper .news-events-wrapper time {
+    margin-bottom: 37.5px;
+  }
+}
+.news-events-wrapper .last-news-events-wrapper {
   border-bottom: 1px solid #dddddd;
+  width: 100%;
+}
+.news-events-wrapper .news-more-wrapper {
+  margin-top: 40px;
+  margin-bottom: 35px;
+  text-align: right;
+}
+@media screen and (min-width: 992px) {
+  .news-events-wrapper .news-more-wrapper {
+    margin-bottom: 0;
+  }
 }
