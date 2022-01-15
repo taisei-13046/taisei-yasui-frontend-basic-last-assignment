@@ -1,18 +1,19 @@
 @use "../../variables" as *;
 
 .news-more-title {
-	display: flex;
-	align-items: center;
-	color: $v_black;
-	font-size: $v_fontsize_s;
-	transition: color 0.2 ease;
+  display: flex;
+  align-items: center;
+  color: $v_black;
+  font-size: $v_fontsize_s;
+  transition: color 0.2s ease;
+  width: 112px;
 
-	i {
-		margin-left: 16px;
-	}
+  i {
+    margin-left: 16px;
+  }
 
-	&:hover {
-		color: $v_gray_nobel;
-		text-decoration: none;
-	}
+  &:hover {
+    color: $v_gray_nobel;
+    text-decoration: none;
+  }
 }
