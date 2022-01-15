@@ -15,63 +15,69 @@
 		border: 1px solid $v_gray_gainsboro;
 		border-bottom: none;
 
-		&:hover {
-			img {
-				transform: scale(1.2);
-			}
-		}
+		a {
+			display: flex;
+			text-decoration: none;
+			color: $v_black;
+			width: 400px;
 
-		img {
-			display: none;
-
-			@media screen and (min-width: $v_breakpoint_lg) {
-				display: block;
-			}
-		}
-
-		.news-events-wrapper {
-			padding: 10px 0 16px 20px;
-			background-color: $v_white;
-
-			@media screen and (min-width: $v_breakpoint_lg) {
-				padding: 37.5px 0px 0px 24px;
-				width: 460px;
-			}
-
-			p {
-				width: 400px;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				font-size: $v_fontsize_m;
-				margin: 0;
-				margin-bottom: 8px;
-
-				@media screen and (min-width: $v_breakpoint_lg) {
-					width: 210px;
-					white-space: normal;
-					display: -webkit-box;
-					-webkit-box-orient: vertical;
-					-webkit-line-clamp: 2;
+			&:hover {
+				img {
+					transform: scale(1.2);
 				}
 			}
 
-			time {
-				display: block;
-				color: $v_gray_nobel;
-				font-size: $v_fontsize_xs;
+			img {
+				display: none;
 
-				@media screen and (min-width: $v_breakpoint_lg){
-					margin-bottom: 37.5px;
+				@media screen and (min-width: $v_breakpoint_lg) {
+					display: block;
+					transition: transform 0.5s ease;
+				}
+			}
+
+			.news-events-wrapper {
+				padding: 10px 0 16px 20px;
+				background-color: $v_white;
+
+				@media screen and (min-width: $v_breakpoint_lg) {
+					padding: 37.5px 0px 0px 24px;
+					width: 460px;
+				}
+
+				p {
+					width: 400px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					font-size: $v_fontsize_m;
+					margin: 0;
+					margin-bottom: 8px;
+
+					@media screen and (min-width: $v_breakpoint_lg) {
+						width: 210px;
+						white-space: normal;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 2;
+					}
+				}
+
+				time {
+					display: block;
+					color: $v_gray_nobel;
+					font-size: $v_fontsize_xs;
+
+					@media screen and (min-width: $v_breakpoint_lg){
+						margin-bottom: 37.5px;
+					}
 				}
 			}
 		}
 	}
 
-
-	.last-news-events-wrapper {
+	.last-img-and-news-wrapper {
 		border-bottom: 1px solid $v_gray_gainsboro;
-		width: 100%;
 	}
 
 	.news-more-wrapper {

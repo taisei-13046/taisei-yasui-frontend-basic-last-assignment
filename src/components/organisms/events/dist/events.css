@@ -11,28 +11,35 @@
   border: 1px solid #dddddd;
   border-bottom: none;
 }
-.news-events-wrapper .img-and-news-wrapper:hover img {
+.news-events-wrapper .img-and-news-wrapper a {
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+  width: 400px;
+}
+.news-events-wrapper .img-and-news-wrapper a:hover img {
   transform: scale(1.2);
 }
-.news-events-wrapper .img-and-news-wrapper img {
+.news-events-wrapper .img-and-news-wrapper a img {
   display: none;
 }
 @media screen and (min-width: 992px) {
-  .news-events-wrapper .img-and-news-wrapper img {
+  .news-events-wrapper .img-and-news-wrapper a img {
     display: block;
+    transition: transform 0.5s ease;
   }
 }
-.news-events-wrapper .img-and-news-wrapper .news-events-wrapper {
+.news-events-wrapper .img-and-news-wrapper a .news-events-wrapper {
   padding: 10px 0 16px 20px;
   background-color: #ffffff;
 }
 @media screen and (min-width: 992px) {
-  .news-events-wrapper .img-and-news-wrapper .news-events-wrapper {
+  .news-events-wrapper .img-and-news-wrapper a .news-events-wrapper {
     padding: 37.5px 0px 0px 24px;
     width: 460px;
   }
 }
-.news-events-wrapper .img-and-news-wrapper .news-events-wrapper p {
+.news-events-wrapper .img-and-news-wrapper a .news-events-wrapper p {
   width: 400px;
   white-space: nowrap;
   overflow: hidden;
@@ -42,7 +49,7 @@
   margin-bottom: 8px;
 }
 @media screen and (min-width: 992px) {
-  .news-events-wrapper .img-and-news-wrapper .news-events-wrapper p {
+  .news-events-wrapper .img-and-news-wrapper a .news-events-wrapper p {
     width: 210px;
     white-space: normal;
     display: -webkit-box;
@@ -50,19 +57,18 @@
     -webkit-line-clamp: 2;
   }
 }
-.news-events-wrapper .img-and-news-wrapper .news-events-wrapper time {
+.news-events-wrapper .img-and-news-wrapper a .news-events-wrapper time {
   display: block;
   color: #999999;
   font-size: 12px;
 }
 @media screen and (min-width: 992px) {
-  .news-events-wrapper .img-and-news-wrapper .news-events-wrapper time {
+  .news-events-wrapper .img-and-news-wrapper a .news-events-wrapper time {
     margin-bottom: 37.5px;
   }
 }
-.news-events-wrapper .last-news-events-wrapper {
+.news-events-wrapper .last-img-and-news-wrapper {
   border-bottom: 1px solid #dddddd;
-  width: 100%;
 }
 .news-events-wrapper .news-more-wrapper {
   margin-top: 40px;
