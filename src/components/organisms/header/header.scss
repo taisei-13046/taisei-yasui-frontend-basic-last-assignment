@@ -4,6 +4,10 @@
   background-color: $v_black;
   padding: 0;
 
+	@media screen and (min-width: $v_breakpoint_xl) {
+		background-color: $v_black_50;
+	}
+
   .img-wrapper {
     margin-left: 16px;
     padding: 20px 0;
@@ -17,6 +21,10 @@
     margin-right: 16px;
     outline: none;
 
+		@media screen and (min-width: $v_breakpoint_xl) {
+			display: none;
+		}
+
     .humberger-icon {
       width: 15px;
       height: 3px;
@@ -27,7 +35,9 @@
   }
 
   .navbar-collapse {
+
     .navbar-nav {
+
       .nav-item {
         padding: 0 18px;
         display: flex;

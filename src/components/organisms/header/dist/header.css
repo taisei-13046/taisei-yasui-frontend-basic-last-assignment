@@ -2,6 +2,11 @@
   background-color: #000000;
   padding: 0;
 }
+@media screen and (min-width: 1200px) {
+  .nav-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
 .nav-wrapper .img-wrapper {
   margin-left: 16px;
   padding: 20px 0;
@@ -12,6 +17,11 @@
 .nav-wrapper button {
   margin-right: 16px;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper button {
+    display: none;
+  }
 }
 .nav-wrapper button .humberger-icon {
   width: 15px;
