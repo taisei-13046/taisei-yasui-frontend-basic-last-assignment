@@ -31,6 +31,9 @@
 
 			.nav-item {
 				padding: 0 18px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
 
 				.nav-link {
 					color: $v_white;
@@ -38,6 +41,34 @@
 					line-height: 26px;
 					padding: 0;
 					margin: 15px 0;
+				}
+
+				.plus-icon {
+					width: 26px;
+					height: 26px;
+					border-radius: 50%;
+					border: 1px solid $v_white;
+					background-color: $v_black;
+					position: relative;
+
+					span::before {
+						content: "";
+						position: absolute;
+						width: 10px;
+						top: 50%;
+						left: 30%;
+						border-top: 2px solid $v_white;
+					}
+
+					span::after {
+						content: "";
+						position: absolute;
+						width: 10px;
+						top: 50%;
+						left: 30%;
+						border-top: 2px solid $v_white;
+						transform: rotate(90deg);
+					}
 				}
 			}
 		}

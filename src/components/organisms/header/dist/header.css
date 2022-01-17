@@ -21,6 +21,9 @@
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
   padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #ffffff;
@@ -28,4 +31,29 @@
   line-height: 26px;
   padding: 0;
   margin: 15px 0;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .plus-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  position: relative;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .plus-icon span::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  top: 50%;
+  left: 30%;
+  border-top: 2px solid #ffffff;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .plus-icon span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  top: 50%;
+  left: 30%;
+  border-top: 2px solid #ffffff;
+  transform: rotate(90deg);
 }
