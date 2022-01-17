@@ -2,6 +2,11 @@
 
 .message-wrapper {
   text-align: center;
+  padding: 32px 20px;
+
+  @media screen and (min-width: $v_breakpoint_lg) {
+    padding: 52px 20px;
+  }
 
   .message-title {
     font-size: $v_fontsize_l;
@@ -16,6 +21,6 @@
 
   .message-text {
     font-size: $v_fontsize_s;
-    font-family: $v_fontfamily_gothic;
+    margin: 0;
   }
 }
