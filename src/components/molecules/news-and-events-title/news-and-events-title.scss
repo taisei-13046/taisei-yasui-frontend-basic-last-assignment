@@ -7,6 +7,7 @@
   .news-title-left {
     font-size: $v_fontsize-l;
     font-family: $v_fontfamily_mincho;
+    margin: 0;
 
     @media screen and (min-width: $v_breakpoint_lg) {
       font-size: $v_fontsize_xxl;
@@ -15,7 +16,7 @@
 
   .news-title-right {
     font-size: $v_fontsize-m;
-    font-family: $v_fontfamily_gothic;
+    margin-bottom: 0;
     margin-left: 16px;
   }
 }
