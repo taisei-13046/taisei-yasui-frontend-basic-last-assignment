@@ -1,0 +1,45 @@
+@use "../../variables" as *;
+
+.nav-wrapper {
+	background-color: $v_black;
+	padding: 0;
+
+	.img-wrapper {
+		margin-left: 16px;
+		padding: 20px 0;
+
+		.logo-img {
+			width: 120px;
+		}
+	}
+
+	button{
+		margin-right: 16px;
+
+		.humberger-icon {
+			width: 15px;
+			height: 3px;
+			background-color: $v_white;
+			margin: 3px 0;
+			border-radius: 1px;
+		}
+	}
+
+	.navbar-collapse {
+
+		.navbar-nav {
+
+			.nav-item {
+				padding: 0 18px;
+
+				.nav-link {
+					color: $v_white;
+					font-size: $v_fontsize_s;
+					line-height: 26px;
+					padding: 0;
+					margin: 15px 0;
+				}
+			}
+		}
+	}
+}

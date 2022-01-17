@@ -1,0 +1,31 @@
+.nav-wrapper {
+  background-color: #000000;
+  padding: 0;
+}
+.nav-wrapper .img-wrapper {
+  margin-left: 16px;
+  padding: 20px 0;
+}
+.nav-wrapper .img-wrapper .logo-img {
+  width: 120px;
+}
+.nav-wrapper button {
+  margin-right: 16px;
+}
+.nav-wrapper button .humberger-icon {
+  width: 15px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  border-radius: 1px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item {
+  padding: 0 18px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0;
+  margin: 15px 0;
+}
