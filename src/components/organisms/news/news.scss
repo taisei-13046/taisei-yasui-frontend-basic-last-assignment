@@ -1,7 +1,8 @@
 @use "../../variables" as *;
 
 .news-wrapper {
-  width: 460px;
+  display: flex;
+  flex-direction: column;
 
   .news-title-wrapper {
     margin-bottom: 32px;
@@ -33,6 +34,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: $v_fontsize_m;
+        line-height: 23px;
         margin: 0;
       }
     }
