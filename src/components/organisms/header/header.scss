@@ -40,9 +40,7 @@
 
       .nav-item {
         padding: 0 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: inline-block;
 
         .nav-link {
           color: $v_white;
@@ -78,6 +76,23 @@
             left: 30%;
             border-top: 2px solid $v_white;
             transform: rotate(90deg);
+          }
+        }
+
+        @media screen and (min-width: $v_breakpoint_lg) {
+          .dropdown-menu {
+            background-color: $v_black;
+            padding: 0;
+            margin: 0;
+
+            @media screen and (min-width: $v_breakpoint_lg) {
+              width: 220px;
+            }
+
+            li {
+              background-color: $v_black;
+              margin: 0;
+            }
           }
         }
       }
