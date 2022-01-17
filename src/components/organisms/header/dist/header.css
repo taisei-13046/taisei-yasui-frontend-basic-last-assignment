@@ -11,6 +11,7 @@
 }
 .nav-wrapper button {
   margin-right: 16px;
+  outline: none;
 }
 .nav-wrapper button .humberger-icon {
   width: 15px;
@@ -39,6 +40,7 @@
   border: 1px solid #ffffff;
   background-color: #000000;
   position: relative;
+  outline: none;
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item .plus-icon span::before {
   content: "";
@@ -56,4 +58,7 @@
   left: 30%;
   border-top: 2px solid #ffffff;
   transform: rotate(90deg);
+}
+.nav-wrapper .navbar-collapse .navbar-nav .plus-icon-nav-item {
+  margin-left: 10px;
 }

@@ -1,76 +1,80 @@
 @use "../../variables" as *;
 
 .nav-wrapper {
-	background-color: $v_black;
-	padding: 0;
+  background-color: $v_black;
+  padding: 0;
 
-	.img-wrapper {
-		margin-left: 16px;
-		padding: 20px 0;
+  .img-wrapper {
+    margin-left: 16px;
+    padding: 20px 0;
 
-		.logo-img {
-			width: 120px;
-		}
-	}
+    .logo-img {
+      width: 120px;
+    }
+  }
 
-	button{
-		margin-right: 16px;
+  button {
+    margin-right: 16px;
+    outline: none;
 
-		.humberger-icon {
-			width: 15px;
-			height: 3px;
-			background-color: $v_white;
-			margin: 3px 0;
-			border-radius: 1px;
-		}
-	}
+    .humberger-icon {
+      width: 15px;
+      height: 3px;
+      background-color: $v_white;
+      margin: 3px 0;
+      border-radius: 1px;
+    }
+  }
 
-	.navbar-collapse {
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        padding: 0 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-		.navbar-nav {
+        .nav-link {
+          color: $v_white;
+          font-size: $v_fontsize_s;
+          line-height: 26px;
+          padding: 0;
+          margin: 15px 0;
+        }
 
-			.nav-item {
-				padding: 0 18px;
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
+        .plus-icon {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          border: 1px solid $v_white;
+          background-color: $v_black;
+          position: relative;
+          outline: none;
 
-				.nav-link {
-					color: $v_white;
-					font-size: $v_fontsize_s;
-					line-height: 26px;
-					padding: 0;
-					margin: 15px 0;
-				}
+          span::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            top: 50%;
+            left: 30%;
+            border-top: 2px solid $v_white;
+          }
 
-				.plus-icon {
-					width: 26px;
-					height: 26px;
-					border-radius: 50%;
-					border: 1px solid $v_white;
-					background-color: $v_black;
-					position: relative;
+          span::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            top: 50%;
+            left: 30%;
+            border-top: 2px solid $v_white;
+            transform: rotate(90deg);
+          }
+        }
+      }
 
-					span::before {
-						content: "";
-						position: absolute;
-						width: 10px;
-						top: 50%;
-						left: 30%;
-						border-top: 2px solid $v_white;
-					}
-
-					span::after {
-						content: "";
-						position: absolute;
-						width: 10px;
-						top: 50%;
-						left: 30%;
-						border-top: 2px solid $v_white;
-						transform: rotate(90deg);
-					}
-				}
-			}
-		}
-	}
+      .plus-icon-nav-item {
+        margin-left: 10px;
+      }
+    }
+  }
 }
