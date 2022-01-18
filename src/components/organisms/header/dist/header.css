@@ -32,16 +32,19 @@
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
   padding: 0 18px;
-  display: inline-block;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .nav-link {
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .nav-link {
   color: #ffffff;
   font-size: 14px;
   line-height: 26px;
   padding: 0;
   margin: 15px 0;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .plus-icon {
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .plus-icon {
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -50,7 +53,7 @@
   position: relative;
   outline: none;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .plus-icon span::before {
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .plus-icon span::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -58,7 +61,7 @@
   left: 30%;
   border-top: 2px solid #ffffff;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .plus-icon span::after {
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .plus-icon span::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -67,24 +70,18 @@
   border-top: 2px solid #ffffff;
   transform: rotate(90deg);
 }
-@media screen and (min-width: 992px) {
-  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
-    background-color: #000000;
-    padding: 0;
-    margin: 0;
-  }
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
 }
-@media screen and (min-width: 992px) and (min-width: 992px) {
-  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
-    width: 220px;
-  }
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+  background-color: #000000;
 }
-@media screen and (min-width: 992px) {
-  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu li {
-    background-color: #000000;
-    margin: 0;
-  }
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  background-color: #000000;
+  text-decoration: none;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .plus-icon-nav-item {
-  margin-left: 10px;
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item a {
+  color: #ffffff;
 }

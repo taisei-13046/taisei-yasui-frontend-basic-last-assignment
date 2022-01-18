@@ -4,9 +4,9 @@
   background-color: $v_black;
   padding: 0;
 
-	@media screen and (min-width: $v_breakpoint_xl) {
-		background-color: $v_black_50;
-	}
+  @media screen and (min-width: $v_breakpoint_xl) {
+    background-color: $v_black_50;
+  }
 
   .img-wrapper {
     margin-left: 16px;
@@ -21,9 +21,9 @@
     margin-right: 16px;
     outline: none;
 
-		@media screen and (min-width: $v_breakpoint_xl) {
-			display: none;
-		}
+    @media screen and (min-width: $v_breakpoint_xl) {
+      display: none;
+    }
 
     .humberger-icon {
       width: 15px;
@@ -35,70 +35,69 @@
   }
 
   .navbar-collapse {
-
     .navbar-nav {
-
       .nav-item {
         padding: 0 18px;
-        display: inline-block;
 
-        .nav-link {
-          color: $v_white;
-          font-size: $v_fontsize_s;
-          line-height: 26px;
-          padding: 0;
-          margin: 15px 0;
-        }
+        .concept-plus-icon-wrapper {
+          display: flex;
+          justify-content: space-between;
 
-        .plus-icon {
-          width: 26px;
-          height: 26px;
-          border-radius: 50%;
-          border: 1px solid $v_white;
-          background-color: $v_black;
-          position: relative;
-          outline: none;
-
-          span::before {
-            content: "";
-            position: absolute;
-            width: 10px;
-            top: 50%;
-            left: 30%;
-            border-top: 2px solid $v_white;
-          }
-
-          span::after {
-            content: "";
-            position: absolute;
-            width: 10px;
-            top: 50%;
-            left: 30%;
-            border-top: 2px solid $v_white;
-            transform: rotate(90deg);
-          }
-        }
-
-        @media screen and (min-width: $v_breakpoint_lg) {
-          .dropdown-menu {
-            background-color: $v_black;
+          .nav-link {
+            color: $v_white;
+            font-size: $v_fontsize_s;
+            line-height: 26px;
             padding: 0;
-            margin: 0;
+            margin: 15px 0;
+          }
 
-            @media screen and (min-width: $v_breakpoint_lg) {
-              width: 220px;
+          .plus-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid $v_white;
+            background-color: $v_black;
+            position: relative;
+            outline: none;
+
+            span::before {
+              content: "";
+              position: absolute;
+              width: 10px;
+              top: 50%;
+              left: 30%;
+              border-top: 2px solid $v_white;
             }
 
-            li {
-              background-color: $v_black;
-              margin: 0;
+            span::after {
+              content: "";
+              position: absolute;
+              width: 10px;
+              top: 50%;
+              left: 30%;
+              border-top: 2px solid $v_white;
+              transform: rotate(90deg);
             }
           }
         }
-      }
+        a {
+          color: $v_white;
+          text-decoration: none;
+          font-size: $v_fontsize_s;
+        }
 
-      .plus-icon-nav-item {
-        margin-left: 10px;
+        .dropdown-menu {
+          background-color: $v_black;
+
+          .dropdown-item {
+            background-color: $v_black;
+            text-decoration: none;
+
+            a {
+              color: $v_white;
+            }
+          }
+        }
       }
     }
   }
