@@ -1,40 +1,31 @@
 @use "../../variables" as *;
 
 .news-events-wrapper {
-  @media screen and (min-width: $v_breakpoint_lg) {
-    width: 460px;
-  }
-
   .news-title-wrapper {
     margin-bottom: 42px;
   }
 
-  .img-and-news-wrapper {
-    display: flex;
-    border: 1px solid $v_gray_gainsboro;
-    border-bottom: none;
-
-    a {
-      display: flex;
+  a {
+    &:hover {
       text-decoration: none;
-      color: $v_black;
 
-      &:hover {
-        img {
-          transform: scale(1.2);
-        }
+      img {
+        transform: scale(1.2);
       }
-
+    }
+    .img-and-news-wrapper {
+      border: 1px solid $v_gray_gainsboro;
+      border-bottom: none;
+      display: flex;
       .img-wrapper {
         overflow: hidden;
-
         img {
           display: none;
 
           @media screen and (min-width: $v_breakpoint_lg) {
-            display: block;
+            display: inline-block;
             height: 100%;
-						width: 100%;
+            width: 100%;
             transition: transform 0.5s ease;
           }
         }
@@ -44,43 +35,42 @@
         padding: 10px 0 16px 20px;
 
         @media screen and (min-width: $v_breakpoint_lg) {
-          padding: 37.5px 0px 0px 24px;
-          width: 240px;
+          padding: 49px 24px;
         }
 
         p {
+          color: $v_black;
+          margin-bottom: 8px;
           width: 400px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          font-size: $v_fontsize_m;
-          margin: 0;
-          margin-bottom: 8px;
+          line-height: 23px;
+          transition: color 0.2s ease;
 
           @media screen and (min-width: $v_breakpoint_lg) {
-            width: 210px;
+            width: 100%;
             white-space: normal;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
           }
+
+          &:hover {
+            color: $v_orange_bistre;
+          }
         }
 
         time {
-          display: block;
-          color: $v_gray_nobel;
           font-size: $v_fontsize_xs;
-
-          @media screen and (min-width: $v_breakpoint_lg) {
-            margin-bottom: 37.5px;
-          }
+          color: $v_gray_gainsboro;
         }
       }
     }
-  }
 
-  .last-img-and-news-wrapper {
-    border-bottom: 1px solid $v_gray_gainsboro;
+    .last-img-and-news-wrapper {
+      border-bottom: 1px solid $v_gray_gainsboro;
+    }
   }
 
   .news-more-wrapper {
