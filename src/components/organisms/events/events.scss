@@ -12,6 +12,10 @@
       img {
         transform: scale(1.2);
       }
+
+      .img-and-news-wrapper .news-events-wrapper p {
+        color: $v_orange_bistre;
+      }
     }
     .img-and-news-wrapper {
       border: 1px solid $v_gray_gainsboro;
@@ -54,10 +58,6 @@
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
-          }
-
-          &:hover {
-            color: $v_orange_bistre;
           }
         }
 
