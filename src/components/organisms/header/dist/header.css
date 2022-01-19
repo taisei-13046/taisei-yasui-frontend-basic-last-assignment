@@ -5,8 +5,6 @@
 @media screen and (min-width: 1200px) {
   .nav-wrapper {
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-between;
   }
 }
 .nav-wrapper .img-wrapper {
@@ -20,6 +18,11 @@
 }
 .nav-wrapper .img-wrapper .logo-img {
   width: 120px;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .img-wrapper .logo-img {
+    width: 140px;
+  }
 }
 .nav-wrapper button {
   margin-right: 16px;
@@ -36,6 +39,9 @@
   background-color: #ffffff;
   margin: 3px 0;
   border-radius: 1px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav {
+  margin: 0 0 0 auto;
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
   padding: 0 18px;

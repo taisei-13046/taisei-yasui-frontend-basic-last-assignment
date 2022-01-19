@@ -6,8 +6,6 @@
 
   @media screen and (min-width: $v_breakpoint_xl) {
     background-color: $v_black_50;
-    display: flex;
-    justify-content: space-between;
   }
 
   .img-wrapper {
@@ -20,6 +18,10 @@
 
     .logo-img {
       width: 120px;
+
+      @media screen and (min-width: $v_breakpoint_xl) {
+        width: 140px;
+      }
     }
   }
 
@@ -42,6 +44,7 @@
 
   .navbar-collapse {
     .navbar-nav {
+      margin: 0 0 0 auto;
       .nav-item {
         padding: 0 18px;
 
