@@ -36,8 +36,21 @@
 
   .navbar-collapse {
     .navbar-nav {
+      position: relative;
       .nav-item {
         padding: 0 18px;
+
+        @media screen and (min-width: $v_breakpoint_xl) {
+          padding: 0;
+          align-items: center;
+          margin-left: 40px;
+          display: flex;
+
+          a {
+            padding: 0;
+            margin: 35px 0;
+          }
+        }
 
         .concept-plus-icon-wrapper {
           display: flex;
@@ -51,32 +64,32 @@
             margin: 15px 0;
           }
 
-          .plus-icon {
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            border: 1px solid $v_white;
-            background-color: $v_black;
-            position: relative;
-            outline: none;
-
-            span::before {
-              content: "";
-              position: absolute;
-              width: 10px;
-              top: 50%;
-              left: 30%;
-              border-top: 2px solid $v_white;
+          .lg-concept {
+            @media screen and (min-width: $v_breakpoint_xl) {
+              display: none;
             }
+          }
 
-            span::after {
-              content: "";
-              position: absolute;
-              width: 10px;
-              top: 50%;
-              left: 30%;
-              border-top: 2px solid $v_white;
-              transform: rotate(90deg);
+          .xl-concept {
+            display: none;
+
+            @media screen and (min-width: $v_breakpoint_xl) {
+              display: block;
+            }
+          }
+
+          a {
+            padding: 0;
+            margin: 15px 0;
+          }
+
+          .dropdown-menu {
+            margin: 0;
+            background-color: $v_black;
+            border-radius: 0;
+
+            .dropdown-item {
+              background-color: $v_black;
             }
           }
         }
@@ -86,16 +99,9 @@
           font-size: $v_fontsize_s;
         }
 
-        .dropdown-menu {
-          background-color: $v_black;
-
-          .dropdown-item {
-            background-color: $v_black;
-            text-decoration: none;
-
-            a {
-              color: $v_white;
-            }
+        @media screen and (min-width: $v_breakpoint_xl) {
+          .concept-nav {
+            width: 220px;
           }
         }
       }

@@ -30,8 +30,23 @@
   margin: 3px 0;
   border-radius: 1px;
 }
+.nav-wrapper .navbar-collapse .navbar-nav {
+  position: relative;
+}
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
   padding: 0 18px;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
+    padding: 0;
+    align-items: center;
+    margin-left: 40px;
+    display: flex;
+  }
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item a {
+    padding: 0;
+    margin: 35px 0;
+  }
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper {
   display: flex;
@@ -44,44 +59,38 @@
   padding: 0;
   margin: 15px 0;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .plus-icon {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .lg-concept {
+    display: none;
+  }
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .xl-concept {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .xl-concept {
+    display: block;
+  }
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper a {
+  padding: 0;
+  margin: 15px 0;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .dropdown-menu {
+  margin: 0;
   background-color: #000000;
-  position: relative;
-  outline: none;
+  border-radius: 0;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .plus-icon span::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  top: 50%;
-  left: 30%;
-  border-top: 2px solid #ffffff;
-}
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .plus-icon span::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  top: 50%;
-  left: 30%;
-  border-top: 2px solid #ffffff;
-  transform: rotate(90deg);
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .dropdown-menu .dropdown-item {
+  background-color: #000000;
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item a {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
 }
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
-  background-color: #000000;
-}
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-  background-color: #000000;
-  text-decoration: none;
-}
-.nav-wrapper .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item a {
-  color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-nav {
+    width: 220px;
+  }
 }
