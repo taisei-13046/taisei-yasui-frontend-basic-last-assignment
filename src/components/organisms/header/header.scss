@@ -6,6 +6,7 @@
 
   @media screen and (min-width: $v_breakpoint_xl) {
     background-color: $v_black_50;
+    height: 93px;
   }
 
   .img-wrapper {
@@ -102,11 +103,14 @@
           }
           .dropdown-menu {
             margin: 0;
+            padding: 0;
             background-color: $v_black;
             border-radius: 0;
+            width: 220px;
 
             .dropdown-item {
               background-color: $v_black;
+              padding: 18px;
               a:hover {
                 color: $v_white;
               }
