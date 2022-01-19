@@ -46,7 +46,7 @@
     .navbar-nav {
       margin: 0 0 0 auto;
       .nav-item {
-        padding: 0 18px;
+        padding: 18px;
 
         @media screen and (min-width: $v_breakpoint_xl) {
           padding: 0;
@@ -74,7 +74,13 @@
             font-size: $v_fontsize_s;
             line-height: 26px;
             padding: 0;
-            margin: 15px 0;
+          }
+
+          .plus-icon {
+            width: 26px;
+            height: 26px;
+            padding: 0;
+            cursor: pointer;
           }
 
           .lg-concept {
@@ -93,9 +99,7 @@
 
           a {
             padding: 0;
-            margin: 15px 0;
           }
-
           .dropdown-menu {
             margin: 0;
             background-color: $v_black;
@@ -109,7 +113,9 @@
             }
           }
         }
+
         a {
+          padding: 0;
           color: $v_white;
           text-decoration: none;
           font-size: $v_fontsize_s;
@@ -117,8 +123,17 @@
 
         @media screen and (min-width: $v_breakpoint_xl) {
           .concept-nav {
-            width: 220px;
+            display: none;
           }
+        }
+        .concept-nav-item:nth-child(1) {
+          padding-top: 36px;
+        }
+        .concept-nav-item:nth-child(10) {
+          padding-bottom: 0;
+        }
+        .concept-nav-item {
+          padding: 18px 10px;
         }
       }
 
