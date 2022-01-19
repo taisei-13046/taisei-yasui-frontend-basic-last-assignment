@@ -5,11 +5,18 @@
 @media screen and (min-width: 1200px) {
   .nav-wrapper {
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
   }
 }
 .nav-wrapper .img-wrapper {
   margin-left: 16px;
   padding: 20px 0;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .img-wrapper {
+    margin-left: 30px;
+  }
 }
 .nav-wrapper .img-wrapper .logo-img {
   width: 120px;
@@ -30,22 +37,23 @@
   margin: 3px 0;
   border-radius: 1px;
 }
-.nav-wrapper .navbar-collapse .navbar-nav {
-  position: relative;
-}
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
   padding: 0 18px;
 }
 @media screen and (min-width: 1200px) {
   .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
     padding: 0;
+    display: flex;
     align-items: center;
     margin-left: 40px;
-    display: flex;
   }
   .nav-wrapper .navbar-collapse .navbar-nav .nav-item a {
     padding: 0;
     margin: 35px 0;
+    transition: color 0.2s ease;
+  }
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item a:hover {
+    color: #999999;
   }
 }
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper {
@@ -84,6 +92,9 @@
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .dropdown-menu .dropdown-item {
   background-color: #000000;
 }
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .dropdown-menu .dropdown-item a:hover {
+  color: #ffffff;
+}
 .nav-wrapper .navbar-collapse .navbar-nav .nav-item a {
   color: #ffffff;
   text-decoration: none;
@@ -93,4 +104,7 @@
   .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-nav {
     width: 220px;
   }
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item:nth-child(8) {
+  margin-right: 50px;
 }
