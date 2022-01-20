@@ -1,0 +1,42 @@
+.news-wrapper .news-title-wrapper {
+  margin-bottom: 32px;
+}
+.news-wrapper .article-wrapper {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+}
+.news-wrapper .article-wrapper a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+.news-wrapper .article-wrapper a .title-time-wrapper:hover {
+  color: #442606;
+}
+.news-wrapper .article-wrapper a .title-time-wrapper time {
+  color: #999999;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.news-wrapper .article-wrapper a .title-time-wrapper p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0;
+}
+.news-wrapper .article-wrapper a .last-news-article-wrapper {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
+}
+.news-wrapper .article-wrapper:nth-child(6) {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
+}
+.news-wrapper .news-more-wrapper {
+  text-align: right;
+  margin-bottom: 35px;
+}
