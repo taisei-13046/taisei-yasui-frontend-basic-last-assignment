@@ -4,6 +4,9 @@
   .contact-wrapper {
     text-align: center;
     padding: 32px 0;
+    @media screen and (min-width: $v_breakpoint_md) {
+      padding: 52px;
+    }
     img {
       width: 150px;
       margin-bottom: 20px;
@@ -22,15 +25,34 @@
     grid-template-columns: 1fr 1fr;
     background-color: $v_white_smoke;
     padding: 16px;
+
     p {
       margin-bottom: 8px;
       font-size: $v_fontsize_s;
       line-height: 20px;
     }
 
-    p:nth-child(7),
-    p:nth-child(8) {
+    img {
+      display: none;
+    }
+
+    p:nth-child(13),
+    p:nth-child(15) {
       margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $v_breakpoint_md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        margin: 0 8px;
+      }
+
+      img {
+        display: block;
+      }
     }
   }
   .bottom-text {
