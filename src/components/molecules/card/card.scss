@@ -3,7 +3,6 @@
 .card {
   position: relative;
   border: none;
-  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -21,6 +20,7 @@
       position: absolute;
       color: $v_black;
       font-size: $v_fontsize_l;
+      line-height: 29px;
       font-weight: bold;
       margin-left: 6px;
       z-index: 2;
@@ -39,14 +39,16 @@
   }
 
   .card-body {
+    background-color: $v_white_smoke;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 32px 0;
 
     .card-text {
       font-size: $v_fontsize_s;
-      margin: 32px 0 30px 0;
+      margin-bottom: 30px;
+      line-height: 33px;
     }
   }
 }
