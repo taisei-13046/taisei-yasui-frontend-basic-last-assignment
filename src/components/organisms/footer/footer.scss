@@ -1,0 +1,44 @@
+@use "../../variables" as *;
+
+.footer-wrapper {
+  .contact-wrapper {
+    text-align: center;
+    padding: 32px 0;
+    img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    .info-text {
+      font-size: $v_fontsize_s;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    i {
+      margin-left: 15px;
+    }
+  }
+  .footer-nav-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $v_white_smoke;
+    padding: 16px;
+    p {
+      margin-bottom: 8px;
+      font-size: $v_fontsize_s;
+      line-height: 20px;
+    }
+
+    p:nth-child(7),
+    p:nth-child(8) {
+      margin-bottom: 0;
+    }
+  }
+  .bottom-text {
+    font-size: $v_fontsize_xs;
+    text-align: center;
+    margin: 0;
+    padding: 16px 0;
+    background-color: $v_black;
+    color: $v_white;
+  }
+}
