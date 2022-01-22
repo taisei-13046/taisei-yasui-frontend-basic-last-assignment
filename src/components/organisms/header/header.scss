@@ -6,7 +6,7 @@
 
   @media screen and (min-width: $v_breakpoint_xl) {
     background-color: $v_black_50;
-    height: 93px;
+    height: 90px;
   }
 
   .img-wrapper {
@@ -51,8 +51,6 @@
 
         @media screen and (min-width: $v_breakpoint_xl) {
           padding: 0;
-          display: flex;
-          align-items: center;
           margin-left: 40px;
 
           a {
