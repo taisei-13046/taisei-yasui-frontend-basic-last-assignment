@@ -1,0 +1,51 @@
+@use "../../variables" as *;
+
+.card {
+  position: relative;
+  border: none;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-left: solid 150px $v_white;
+    border-bottom: solid 150px transparent;
+    z-index: 1;
+  }
+
+  .card-img-wrapper {
+    overflow: hidden;
+
+    .card-title {
+      position: absolute;
+      color: $v_black;
+      font-size: $v_fontsize_l;
+      font-weight: bold;
+      margin-left: 6px;
+      z-index: 2;
+      color: $v_orange_bistre;
+    }
+
+    .card-img {
+      transition: transform 0.2s ease;
+
+      &:hover {
+        @media screen and(min-width: $v_breakpoint_md) {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-text {
+      font-size: $v_fontsize_s;
+      margin: 32px 0 30px 0;
+    }
+  }
+}
