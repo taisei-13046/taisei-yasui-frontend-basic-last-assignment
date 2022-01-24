@@ -10,6 +10,7 @@
     border-left: solid 150px $v_white;
     border-bottom: solid 150px transparent;
     z-index: 1;
+    pointer-events: none;
   }
 
   .card-img-wrapper {
@@ -23,8 +24,9 @@
       line-height: 29px;
       font-weight: bold;
       margin-left: 6px;
-      z-index: 2;
+      z-index: 1;
       color: $v_orange_bistre;
+      pointer-events: none;
     }
 
     .card-img {
