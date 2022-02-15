@@ -3,7 +3,6 @@
 .card {
   position: relative;
   border: none;
-  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -11,23 +10,27 @@
     border-left: solid 150px $v_white;
     border-bottom: solid 150px transparent;
     z-index: 1;
+    pointer-events: none;
   }
 
   .card-img-wrapper {
     overflow: hidden;
+    position: relative;
 
     .card-title {
       position: absolute;
       color: $v_black;
       font-size: $v_fontsize_l;
+      line-height: 29px;
       font-weight: bold;
       margin-left: 6px;
-      z-index: 2;
+      z-index: 1;
       color: $v_orange_bistre;
+      pointer-events: none;
     }
 
     .card-img {
-      transition: transform 0.2s ease;
+      transition: transform 0.5s ease;
 
       &:hover {
         @media screen and(min-width: $v_breakpoint_md) {
@@ -38,14 +41,20 @@
   }
 
   .card-body {
+    background-color: $v_white_smoke;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 32px 46px;
+
+    @media screen and (min-width: $v_breakpoint_md) {
+      padding: 32px 35px;
+    }
 
     .card-text {
       font-size: $v_fontsize_s;
-      margin: 32px 0 30px 0;
+      margin-bottom: 30px;
+      line-height: 33px;
     }
   }
 }
