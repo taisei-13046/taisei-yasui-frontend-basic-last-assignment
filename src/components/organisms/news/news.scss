@@ -6,22 +6,22 @@
   }
 
   .all-article-wrapper {
-    .article-wrapper {
-      padding: 20px;
-      background-color: $v_white;
+    a {
+      display: block;
+      text-decoration: none;
+      color: $v_black;
       border: 1px solid $v_gray_gainsboro;
       border-bottom: none;
 
-      a {
-        text-decoration: none;
-        color: $v_black;
+      .article-wrapper {
+        padding: 20px;
+        background-color: $v_white;
         transition: color 0.2s ease;
+        &:hover {
+          color: $v_orange_bistre;
+        }
 
         .title-time-wrapper {
-          &:hover {
-            color: $v_orange_bistre;
-          }
-
           time {
             color: $v_gray_nobel;
             font-size: $v_fontsize_xs;
@@ -40,9 +40,10 @@
       }
     }
   }
-  .all-article-wrapper .article-wrapper:last-child {
-    margin-bottom: 30px;
+
+  .all-article-wrapper a:last-child {
     border-bottom: 1px solid $v_gray_gainsboro;
+    margin-bottom: 30px;
   }
 
   .news-more-wrapper {
