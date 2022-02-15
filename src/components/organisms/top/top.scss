@@ -3,39 +3,46 @@
 .top-wrapper {
   background-color: $v_black;
   margin-bottom: 40px;
+
   @media screen and (min-width: $v_breakpoint_lg) {
     margin-bottom: 30px;
   }
+
   .img-title-wrapper {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
     img {
       width: 100%;
       height: 360px;
       z-index: 1;
 
       @media screen and (min-width: $v_breakpoint_lg) {
-        height: 100%;
+        height: 100vh;
       }
     }
+
     p {
       position: absolute;
       color: $v_white;
       font-size: $v_fontsize_l;
       z-index: 2;
       writing-mode: vertical-rl;
+      font-family: $v_fontfamily_mincho;
 
       @media screen and (min-width: $v_breakpoint_lg) {
         font-size: $v_fontsize_xl;
       }
     }
   }
+
   .message-wrapper {
     @media screen and (min-width: $v_breakpoint_lg) {
       padding: 52px 0 74px;
     }
+
     .message-title {
       color: $v_white;
 
@@ -43,8 +50,10 @@
         padding: 0 49.5px;
       }
     }
+
     .message-text {
       color: $v_white;
+
       @media screen and (min-width: $v_breakpoint_lg) {
         padding: 0 38.5px;
       }
