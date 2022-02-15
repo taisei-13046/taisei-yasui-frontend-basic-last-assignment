@@ -128,10 +128,10 @@
             display: none;
           }
         }
-        .concept-nav-item:nth-child(1) {
+        .concept-nav-item:first-child {
           padding-top: 36px;
         }
-        .concept-nav-item:nth-child(10) {
+        .concept-nav-item:last-child {
           padding-bottom: 0;
         }
         .concept-nav-item {

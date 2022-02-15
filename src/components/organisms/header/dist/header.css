@@ -1,0 +1,132 @@
+.nav-wrapper {
+  background-color: #000000;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 90px;
+  }
+}
+.nav-wrapper .img-wrapper {
+  margin-left: 16px;
+  padding: 20px 0;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .img-wrapper {
+    margin-left: 30px;
+  }
+}
+.nav-wrapper .img-wrapper .logo-img {
+  width: 120px;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .img-wrapper .logo-img {
+    width: 140px;
+  }
+}
+.nav-wrapper button {
+  margin-right: 16px;
+  outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper button {
+    display: none;
+  }
+}
+.nav-wrapper button .humberger-icon {
+  width: 15px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  border-radius: 1px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav {
+  margin: 0 0 0 auto;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item {
+  padding: 18px;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item {
+    padding: 0;
+    margin-left: 40px;
+  }
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item a {
+    padding: 0;
+    margin: 35px 0;
+    transition: color 0.2s ease;
+  }
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item a:hover {
+    color: #999999;
+  }
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .nav-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .plus-icon {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .lg-concept {
+    display: none;
+  }
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .xl-concept {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .xl-concept {
+    display: block;
+  }
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper a {
+  padding: 0;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .dropdown-menu {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  border-radius: 0;
+  width: 220px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .dropdown-menu .dropdown-item {
+  background-color: #000000;
+  padding: 18px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-plus-icon-wrapper .dropdown-menu .dropdown-item a:hover {
+  color: #ffffff;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item a {
+  padding: 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-nav {
+    display: none;
+  }
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-nav-item:first-child {
+  padding-top: 36px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-nav-item:last-child {
+  padding-bottom: 0;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item .concept-nav-item {
+  padding: 18px 10px;
+}
+.nav-wrapper .navbar-collapse .navbar-nav .nav-item:nth-child(8) {
+  margin-right: 50px;
+}
