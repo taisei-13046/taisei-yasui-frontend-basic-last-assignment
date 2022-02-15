@@ -73,10 +73,9 @@
         }
       }
     }
-  }
-
-  .all-article-wrapper .article-wrapper:last-child {
-    border-bottom: 1px solid $v_gray_gainsboro;
+    .article-wrapper:last-child {
+      border-bottom: 1px solid $v_gray_gainsboro;
+    }
   }
 
   .news-more-wrapper {
