@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+
+.cards-wrapper {
+  @media screen and (min-width: $v_breakpoint_md) {
+    margin-bottom: 100px;
+  }
+  .card:first-child {
+    margin-bottom: 40px;
+    @media screen and (min-width: $v_breakpoint_md) {
+      margin: 0 24px 0 0;
+    }
+  }
+
+  .card:last-child {
+    margin: 40px 0;
+    @media screen and (min-width: $v_breakpoint_md) {
+      margin: 0 0 0 24px;
+    }
+  }
+}
