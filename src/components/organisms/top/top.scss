@@ -39,10 +39,6 @@
   }
 
   .message-wrapper {
-    @media screen and (min-width: $v_breakpoint_lg) {
-      padding: 52px 0 74px;
-    }
-
     .message-title {
       color: $v_white;
 

@@ -36,11 +36,6 @@
     font-size: 36px;
   }
 }
-@media screen and (min-width: 992px) {
-  .top-wrapper .message-wrapper {
-    padding: 52px 0 74px;
-  }
-}
 .top-wrapper .message-wrapper .message-title {
   color: #ffffff;
 }
