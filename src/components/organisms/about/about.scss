@@ -1,0 +1,51 @@
+@use "../../variables" as *;
+
+.about-wrapper {
+  .img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    @media screen and (min-width: $v_breakpoint_lg) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .message-wrapper {
+    background-color: $v_white_smoke;
+    margin-bottom: 40px;
+
+    .message-title {
+      color: $v_orange_bistre;
+      font-size: $v_fontsize_l;
+      line-height: 30px;
+    }
+    .message-text {
+      font-size: $v_fontsize_s;
+      line-height: 28px;
+      padding: 0 4px;
+    }
+
+    @media screen and (min-width: $v_breakpoint_lg) {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 100px;
+
+      .message-title {
+        font-size: $v_fontsize_xl;
+        line-height: 54px;
+        margin-bottom: 10px;
+      }
+
+      .message-text {
+        line-height: 36px;
+        padding: 0 6.5px;
+      }
+    }
+  }
+}
