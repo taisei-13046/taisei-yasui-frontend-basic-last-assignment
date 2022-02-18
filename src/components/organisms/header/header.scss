@@ -1,0 +1,149 @@
+@use "../../variables" as *;
+
+.nav-wrapper {
+  background-color: $v_black;
+  padding: 0;
+
+  @media screen and (min-width: $v_breakpoint_xl) {
+    background-color: $v_black_50;
+    height: 93px;
+  }
+
+  .img-wrapper {
+    margin-left: 16px;
+    padding: 20px 0;
+
+    @media screen and (min-width: $v_breakpoint_xl) {
+      margin-left: 30px;
+    }
+
+    .logo-img {
+      width: 120px;
+
+      @media screen and (min-width: $v_breakpoint_xl) {
+        width: 140px;
+      }
+    }
+  }
+
+  button {
+    margin-right: 16px;
+    outline: none;
+
+    @media screen and (min-width: $v_breakpoint_xl) {
+      display: none;
+    }
+
+    .humberger-icon {
+      width: 15px;
+      height: 3px;
+      background-color: $v_white;
+      margin: 3px 0;
+      border-radius: 1px;
+    }
+  }
+
+  .navbar-collapse {
+    .navbar-nav {
+      margin: 0 0 0 auto;
+      .nav-item {
+        padding: 18px;
+
+        @media screen and (min-width: $v_breakpoint_xl) {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          margin-left: 40px;
+
+          a {
+            padding: 0;
+            margin: 35px 0;
+            transition: color 0.2s ease;
+
+            &:hover {
+              color: $v_gray_nobel;
+            }
+          }
+        }
+
+        .concept-plus-icon-wrapper {
+          display: flex;
+          justify-content: space-between;
+
+          .nav-link {
+            color: $v_white;
+            font-size: $v_fontsize_s;
+            line-height: 26px;
+            padding: 0;
+          }
+
+          .plus-icon {
+            width: 26px;
+            height: 26px;
+            padding: 0;
+            cursor: pointer;
+          }
+
+          .lg-concept {
+            @media screen and (min-width: $v_breakpoint_xl) {
+              display: none;
+            }
+          }
+
+          .xl-concept {
+            display: none;
+
+            @media screen and (min-width: $v_breakpoint_xl) {
+              display: block;
+            }
+          }
+
+          a {
+            padding: 0;
+          }
+          .dropdown-menu {
+            margin: 0;
+            padding: 0;
+            background-color: $v_black;
+            border-radius: 0;
+            width: 220px;
+
+            .dropdown-item {
+              background-color: $v_black;
+              padding: 18px;
+              a:hover {
+                color: $v_white;
+              }
+            }
+          }
+        }
+
+        a {
+          padding: 0;
+          color: $v_white;
+          text-decoration: none;
+          font-size: $v_fontsize_s;
+        }
+
+        @media screen and (min-width: $v_breakpoint_xl) {
+          .concept-nav {
+            display: none;
+          }
+        }
+        .concept-nav-item:nth-child(1) {
+          padding-top: 36px;
+        }
+        .concept-nav-item:nth-child(10) {
+          padding-bottom: 0;
+        }
+        .concept-nav-item {
+          padding: 18px 10px;
+        }
+      }
+
+      .nav-item:nth-child(8) {
+        margin-right: 50px;
+      }
+    }
+  }
+}

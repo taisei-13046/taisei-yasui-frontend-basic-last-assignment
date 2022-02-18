@@ -1,0 +1,54 @@
+.top-wrapper {
+  background-color: #000000;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 992px) {
+  .top-wrapper {
+    margin-bottom: 30px;
+  }
+}
+.top-wrapper .img-title-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-wrapper .img-title-wrapper img {
+  width: 100%;
+  height: 360px;
+  z-index: 1;
+}
+@media screen and (min-width: 992px) {
+  .top-wrapper .img-title-wrapper img {
+    height: 100vh;
+  }
+}
+.top-wrapper .img-title-wrapper p {
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  z-index: 2;
+  writing-mode: vertical-rl;
+  font-family: "Noto Serif JP", serif;
+}
+@media screen and (min-width: 992px) {
+  .top-wrapper .img-title-wrapper p {
+    font-size: 36px;
+  }
+}
+.top-wrapper .message-wrapper .message-title {
+  color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .top-wrapper .message-wrapper .message-title {
+    padding: 0 49.5px;
+  }
+}
+.top-wrapper .message-wrapper .message-text {
+  color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .top-wrapper .message-wrapper .message-text {
+    padding: 0 38.5px;
+  }
+}
